@@ -77,3 +77,13 @@ ALTER TABLE editora
 		REFERENCES grupo(id_grupo)
         ON UPDATE CASCADE
 		ON DELETE SET NULL;
+		
+
+-- Comandos
+
+INSERT INTO autor VALUE (null, 'Gabriela', 'F', '1993-12-10');
+
+UPDATE autor SET nome = 'Gabriela Fernandes' 
+	WHERE cod_autor = 1;
+
+SELECT * FROM autor;
